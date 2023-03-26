@@ -1,0 +1,25 @@
+Event: 'close'
+Event: 'drain'
+Event: 'error'
+Event: 'finish'
+Event: 'pipe'
+Event: 'unpipe'
+writable.cork()
+writable.destroy([error])
+writable.closed
+writable.destroyed
+writable.end([chunk[, encoding]][, callback])
+writable.setDefaultEncoding(encoding)
+writable.uncork()
+writable.writable
+writable.writableAborted
+writable.writableEnded
+writable.writableCorked
+writable.errored
+writable.writableFinished
+writable.writableHighWaterMark
+writable.writableLength
+writable.writableNeedDrain
+writable.writableObjectMode
+writable.write(chunk[, encoding][, callback])
+writable.writableHighWaterMark
