@@ -9,17 +9,17 @@ const partialPath = path.join(__dirname,"../templates/partials");
 app.set('view engine','hbs')
 app.set('views',templatePath)
 hbs.registerPartials(partialPath)
-app.get("/",(req,res)=>{
+app.get("",(req,res)=>{
     res.render("index")
 })
 app.get("/about",(req,res)=>{
     res.render("about")
 })
-app.get("*",(req,res)=>{
-    res.render("404",{
-        errormemnt:"<h1> Oops Page Couldn't found </h1> "
-    })
-})
+// app.get("*",(req,res)=>{
+//     res.render("404",{
+//         errormemnt:" Oops Page Couldn't found  "
+//     })
+// })
           //built in module
 app.use(express.static(staticPath));
 app.get('/',(req,res)=>{
